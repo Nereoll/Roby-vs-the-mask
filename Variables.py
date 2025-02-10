@@ -248,7 +248,7 @@ class Obstacle_m_gi(pygame.sprite.Sprite):
 class Border(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.sprite=pygame.image.load("Sprite/border2.png").convert_alpha()      
+        self.sprite=pygame.image.load("Sprite/Border2.png").convert_alpha()
 #personnage--------------------------------------------------
 class Rico(pygame.sprite.Sprite):
     def __init__(self):

@@ -94,18 +94,17 @@ while run==True:
                                         Omgi.speed=Liste_vitesse[indice_vitesse]
                                         changement_speed=True
                         else:changement_speed=False
-                        
                         if dico_key.get(K_SPACE)==True:
                                 Rico.jump()
                         if dico_key.get(K_F11)==fullscreen:
                                 window=fullscreen_switch(fullscreen,window)[0]
                                 fullscreen=fullscreen=fullscreen_switch(fullscreen,window)[1]
                         affic(score_digit,Liste_vitesse[indice_vitesse])
-                
+
                 for event in pygame.event.get():
                         if event.type == QUIT:
                                 run= False
-                                print ("Fin de session")                                
+                                print ("Fin de session")
                                 pygame.quit()                   #close the window
                         elif event.type==KEYDOWN :
                                 if event.key==K_F11:
@@ -139,7 +138,4 @@ while run==True:
                 
 time.sleep(8.5)                
 pygame.quit()
-                
-                
-                
-
+ 
